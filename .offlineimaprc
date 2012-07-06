@@ -1,0 +1,44 @@
+[general]
+#accounts = loca, gmail
+#accounts = gmail
+#accounts = loca
+accounts = locagmail
+
+ui = Basic
+#ui = Blinkenlights
+autorefresh = 5
+quick = 10
+
+[Account gmail]
+localrepository = Local
+remoterepository = GmailRepository
+
+[Account loca]
+localrepository = Local
+remoterepository = ExchangeRepository
+
+[Account locagmail]
+localrepository = ExchangeRepository
+remoterepository = GmailRepository
+
+[Repository GmailRepository]
+type = Gmail
+ssl = yes
+cert_fingerprint = f3043dd689a2e7dddfbef82703a6c65ea9b634c1
+remotepassfile = ~/Password.IMAP.Gmail
+remoteuser = davidpaniz@gmail.com
+#remotepassfile = ~/Password.IMAP.Locaweb
+#remoteuser = davidpaniz.work@gmail.com
+folderfilter = lambda f: f in 'Locaweb' or 'Locaweb' in f
+
+
+[Repository ExchangeRepository]
+type = IMAP
+remotehost = outlook.locaweb.com.br
+remoteuser = david.paniz
+remotepassfile = ~/Password.IMAP.Locaweb
+folderfilter = lambda f: f in 'Locaweb' or 'Locaweb' in f
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Test
