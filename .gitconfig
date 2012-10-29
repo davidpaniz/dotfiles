@@ -1,15 +1,34 @@
 [alias]
-	st = status
-        list-testing = !git tags | grep testing
-        list-stable= !git tags | grep stable
-        tags = !git for-each-ref refs/tags/* --format='%(refname)' --sort='authordate' | sed 's/refs\\/tags\\///g'
+    st = status
+    list-testing = !git tags | grep testing
+    list-stable= !git tags | grep stable
+    tags = !git for-each-ref refs/tags/* --format='%(refname)' --sort='authordate' | sed 's/refs\\/tags\\///g'
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+    editor = vim
+    excludesfile = ~/.gitignore
 [push]
-	default = matching
+    default = matching
 
 [user]
-	name = David Paniz
-	email = davidpaniz@gmail.com
+    name = David Paniz
+    email = davidpaniz@gmail.com
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
