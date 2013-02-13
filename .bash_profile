@@ -13,3 +13,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
+
+. .aws_credentials
