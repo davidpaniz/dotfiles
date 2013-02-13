@@ -14,4 +14,4 @@ fi
 
 export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 
-. .aws_credentials
+. ~/.aws_credentials
