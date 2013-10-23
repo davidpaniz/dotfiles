@@ -3,8 +3,10 @@
 *.swp
 *.swo
 .generators
+.rakeTasks
 .DS_Store
 .project
 .settings/*
 *.rakeTasks
 .classpath
+idea_conf
