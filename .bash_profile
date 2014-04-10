@@ -1,5 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
 
@@ -14,4 +12,9 @@ fi
 
 export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 
-. ~/.aws_credentials
+. ~/.github_token
+
+export AWSENV_PROFILES_DIR="~/awsenv"
+source .awsenv.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
