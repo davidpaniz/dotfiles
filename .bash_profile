@@ -14,7 +14,7 @@ export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 
 . ~/.github_token
 
-export AWSENV_PROFILES_DIR="~/awsenv"
+export AWSENV_PROFILES_DIR="$HOME/awsenv"
 source .awsenv.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
