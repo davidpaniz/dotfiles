@@ -15,8 +15,7 @@ export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 export AWSENV_PROFILES_DIR="$HOME/awsenv"
 source "$HOME/.awsenv.sh"
 
-source "$HOME/.use-java.sh"
-use_java 8
+source "$HOME/.use_java.sh"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
