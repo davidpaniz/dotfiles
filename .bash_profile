@@ -1,9 +1,7 @@
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
-
 alias be='bundle exec'
 alias unit='be rspec spec -t ~@acceptance'
 alias acceptance='be rspec spec -t @acceptance'
+alias myip='curl http://curlmyip.com'
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
@@ -15,6 +13,10 @@ export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 . ~/.github_token
 
 export AWSENV_PROFILES_DIR="$HOME/awsenv"
-source .awsenv.sh
+source "$HOME/.awsenv.sh"
+
+source "$HOME/.use-java.sh"
+use_java 8
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
