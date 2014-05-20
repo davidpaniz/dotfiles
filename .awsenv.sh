@@ -70,6 +70,9 @@ function awsenv-set() {
     export     AWS_ACCESS_KEY_ID=$( awk -F= '/AccessKey/ {print $2}' $AWS_CREDENTIAL_FILE 2>/dev/null || echo 'NOT-FOUND' )
     export AWS_SECRET_ACCESS_KEY=$( awk -F= '/SecretKey/ {print $2}' $AWS_CREDENTIAL_FILE 2>/dev/null || echo 'NOT-FOUND' )
 
+    export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
+    export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
+
     # EC2
     export         EC2_CERT="$(/bin/ls ${profiles_dir}/${profile}/cert-*.pem 2>/dev/null || echo 'NOT-FOUND' )"
     export  EC2_PRIVATE_KEY="$(/bin/ls ${profiles_dir}/${profile}/pk-*.pem   2>/dev/null || echo 'NOT-FOUND' )"
