@@ -73,6 +73,8 @@ function awsenv-set() {
     export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
     export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
 
+    export EC2_REGION=sa-east-1
+
     # EC2
     export         EC2_CERT="$(/bin/ls ${profiles_dir}/${profile}/cert-*.pem 2>/dev/null || echo 'NOT-FOUND' )"
     export  EC2_PRIVATE_KEY="$(/bin/ls ${profiles_dir}/${profile}/pk-*.pem   2>/dev/null || echo 'NOT-FOUND' )"
