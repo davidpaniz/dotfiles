@@ -20,4 +20,9 @@ source "$HOME/.use_java.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.61.5/libexec"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.13.0/libexec"
+export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.2/libexec"
+export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.34.0/libexec"
+
+export EC2_URL=https://ec2.sa-east-1.amazonaws.com
 
