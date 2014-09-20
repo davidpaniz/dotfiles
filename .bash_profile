@@ -26,3 +26,5 @@ export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.34.0/libexec"
 
 export EC2_URL=https://ec2.sa-east-1.amazonaws.com
 
+export PATH=/usr/local/sbin:$PATH
+
