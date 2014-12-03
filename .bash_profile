@@ -49,3 +49,5 @@ export GIT_PS1_SHOWDIRTYSTATE="true"
 
 export PATH=/usr/local/sbin:$PATH
 
+awsenv-set prod
+use-java 8
