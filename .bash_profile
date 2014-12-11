@@ -17,6 +17,8 @@ source "$HOME/.use_java.sh"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
+export CODE_HOME="$HOME/projects"
+
 export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.61.5/libexec"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.13.0/libexec"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.2/libexec"
@@ -37,7 +39,7 @@ export NU_HOME="/Users/davidpaniz/projects/nubank"
 export NUDEV_HOME="$NU_HOME/nudev"
 export PATH="$NUDEV_HOME:$PATH"
 
-export KAFKA_HOME="$CODE_HOME/kafka/kafka_2.9.2-0.8.1.1"
+export KAFKA_HOME="$CODE_HOME/kafka_2.9.2-0.8.1.1"
 export RIEMANN_HOME="$CODE_HOME/riemann/riemann-0.2.5"
 
 export DATOMIC_HOME="$NU_HOME/datomic/datomic-pro-0.9.4880.2"
