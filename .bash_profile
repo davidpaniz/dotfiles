@@ -53,3 +53,9 @@ export PATH=/usr/local/sbin:$PATH
 
 awsenv-set prod
 use-java 8
+
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# added by Anaconda 2.2.0 installer
+# export PATH="/Users/davidpaniz/anaconda/bin:$PATH"
