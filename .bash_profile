@@ -12,6 +12,7 @@ export PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
 
 export AWSENV_PROFILES_DIR="$HOME/awsenv"
 source "$HOME/.awsenv.sh"
+alias aws-us="AWS_DEFAULT_REGION=us-east-1"
 
 source "$HOME/.use_java.sh"
 
