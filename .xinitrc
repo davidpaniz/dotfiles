@@ -1,0 +1,2 @@
+modmap .xmodmap
+
