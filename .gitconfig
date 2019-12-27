@@ -1,6 +1,7 @@
 [alias]
     st = status
     cb = checkout
+    di = diff
     b  = branch
     p  = pull
     pu = push
